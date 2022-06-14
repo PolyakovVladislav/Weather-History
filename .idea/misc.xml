@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android/WeatherHistory/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/Android/WeatherHistory/app/src/main/res/drawable/animation_drop_arrow_rotate_down.xml" value="0.1195" />
+        <entry key="..\:/Android/WeatherHistory/app/src/main/res/drawable/animation_drop_arrow_rotate_right.xml" value="0.1195" />
+        <entry key="..\:/Android/WeatherHistory/app/src/main/res/drawable/animation_refresh_rotate.xml" value="0.1195" />
+        <entry key="..\:/Android/WeatherHistory/app/src/main/res/drawable/animation_refresh_to_storage.xml" value="0.1005" />
+        <entry key="..\:/Android/WeatherHistory/app/src/main/res/drawable/animation_storage_to_refresh_rotate.xml" value="0.1" />
+        <entry key="..\:/Android/WeatherHistory/app/src/main/res/drawable/arrow_drop_down_animation.xml" value="0.1925" />
+        <entry key="..\:/Android/WeatherHistory/app/src/main/res/drawable/background_child_for_imageview.xml" value="0.1175" />
+        <entry key="..\:/Android/WeatherHistory/app/src/main/res/drawable/background_expand_view.xml" value="0.1" />
+        <entry key="..\:/Android/WeatherHistory/app/src/main/res/drawable/c4.xml" value="0.1085" />
+        <entry key="..\:/Android/WeatherHistory/app/src/main/res/drawable/c4_r1.xml" value="0.169" />
+        <entry key="..\:/Android/WeatherHistory/app/src/main/res/drawable/card_background.xml" value="0.1175" />
+        <entry key="..\:/Android/WeatherHistory/app/src/main/res/drawable/card_background_child.xml" value="0.142" />
+        <entry key="..\:/Android/WeatherHistory/app/src/main/res/drawable/card_background_child_for_imageView.xml" value="0.142" />
+        <entry key="..\:/Android/WeatherHistory/app/src/main/res/drawable/card_background_expand_view.xml" value="0.13" />
+        <entry key="..\:/Android/WeatherHistory/app/src/main/res/drawable/card_background_white.xml" value="0.1265" />
+        <entry key="..\:/Android/WeatherHistory/app/src/main/res/drawable/card_background_yellow.xml" value="0.13" />
+        <entry key="..\:/Android/WeatherHistory/app/src/main/res/drawable/drop_arrow_rotate_right.xml" value="0.1085" />
+        <entry key="..\:/Android/WeatherHistory/app/src/main/res/drawable/ic_baseline_arrow_drop_down_24.xml" value="0.231" />
+        <entry key="..\:/Android/WeatherHistory/app/src/main/res/drawable/ic_baseline_arrow_right_24.xml" value="0.248" />
+        <entry key="..\:/Android/WeatherHistory/app/src/main/res/drawable/ic_baseline_brightness_7_24.xml" value="0.1385" />
+        <entry key="..\:/Android/WeatherHistory/app/src/main/res/drawable/ic_baseline_refresh_24.xml" value="0.1" />
+        <entry key="..\:/Android/WeatherHistory/app/src/main/res/drawable/ic_baseline_storage_24.xml" value="0.1" />
+        <entry key="..\:/Android/WeatherHistory/app/src/main/res/drawable/ic_sun.xml" value="0.12" />
+        <entry key="..\:/Android/WeatherHistory/app/src/main/res/drawable/sun.xml" value="0.215" />
+        <entry key="..\:/Android/WeatherHistory/app/src/main/res/layout/card_background.xml" value="0.50625" />
+        <entry key="..\:/Android/WeatherHistory/app/src/main/res/layout/fragment_scrolling.xml" value="0.25" />
+        <entry key="..\:/Android/WeatherHistory/app/src/main/res/layout/main_activity.xml" value="0.226890756302521" />
+        <entry key="..\:/Android/WeatherHistory/app/src/main/res/layout/main_fragment.xml" value="0.39305555555555555" />
+        <entry key="..\:/Android/WeatherHistory/app/src/main/res/layout/recycer_view_expanded_scene.xml" value="0.50625" />
+        <entry key="..\:/Android/WeatherHistory/app/src/main/res/layout/recycler_view_child.xml" value="0.4111111111111111" />
+        <entry key="..\:/Android/WeatherHistory/app/src/main/res/layout/recycler_view_child_item.xml" value="0.31932773109243695" />
+        <entry key="..\:/Android/WeatherHistory/app/src/main/res/layout/recycler_view_child_item_collapsed.xml" value="0.6058091286307054" />
+        <entry key="..\:/Android/WeatherHistory/app/src/main/res/layout/recycler_view_child_item_expanded.xml" value="0.4497816593886463" />
+        <entry key="..\:/Android/WeatherHistory/app/src/main/res/layout/recycler_view_child_scene.xml" value="0.2805194805194805" />
+        <entry key="..\:/Android/WeatherHistory/app/src/main/res/layout/recycler_view_collapsed_scene.xml" value="0.4736111111111111" />
+        <entry key="..\:/Android/WeatherHistory/app/src/main/res/layout/recycler_view_expanded_scene.xml" value="0.5198170731707317" />
+        <entry key="..\:/Android/WeatherHistory/app/src/main/res/layout/recycler_view_group.xml" value="0.1" />
+        <entry key="..\:/Android/WeatherHistory/app/src/main/res/layout/recycler_view_group_item.xml" value="0.5" />
+        <entry key="..\:/Android/WeatherHistory/app/src/main/res/layout/recycler_view_parent_day.xml" value="0.50625" />
+        <entry key="..\:/Android/WeatherHistory/app/src/main/res/layout/recycler_view_rootscene.xml" value="0.21388888888888888" />
+        <entry key="..\:/Android/WeatherHistory/app/src/main/res/layout/storage_fragment.xml" value="0.425" />
+        <entry key="..\:/Android/WeatherHistory/app/src/main/res/menu/main_menu.xml" value="0.5" />
+        <entry key="..\:/Android/WeatherHistory/app/src/main/res/xml/root_preferences.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

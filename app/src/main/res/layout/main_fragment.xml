@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.mainFragment.MainFragment">
+
+    <TextView
+        android:id="@+id/textView_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/card_background_child"
+        android:padding="8dp"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout_weatherCharacter"
+        android:layout_width="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:padding="4dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_background_child"
+        app:layout_constraintTop_toBottomOf="@id/textView_date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView_weatherCharacter"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:contentDescription="@string/weather_character"
+            android:src="@drawable/ic_baseline_close_24"
+            app:layout_constraintBottom_toBottomOf="@+id/textView_comfortTemperature"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView_weatherCharacter" />
+
+        <TextView
+            android:id="@+id/textView_weatherCharacter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView_weatherCharacter"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_temperatureDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/temperature"
+            app:layout_constraintEnd_toEndOf="@+id/textView_comfortTemperatureDescription"
+            app:layout_constraintStart_toStartOf="@+id/textView_weatherCharacter"
+            app:layout_constraintTop_toBottomOf="@+id/textView_weatherCharacter" />
+
+        <TextView
+            android:id="@+id/textView_temperature"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            app:layout_constraintEnd_toEndOf="@+id/textView_weatherCharacter"
+            app:layout_constraintStart_toEndOf="@+id/textView_temperatureDescription"
+            app:layout_constraintTop_toTopOf="@+id/textView_temperatureDescription" />
+
+        <TextView
+            android:id="@+id/textView_comfortTemperatureDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/feeling_temperature"
+            app:layout_constraintStart_toStartOf="@+id/textView_temperatureDescription"
+            app:layout_constraintTop_toBottomOf="@+id/textView_temperatureDescription" />
+
+        <TextView
+            android:id="@+id/textView_comfortTemperature"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            app:layout_constraintEnd_toEndOf="@+id/textView_temperature"
+            app:layout_constraintStart_toEndOf="@+id/textView_comfortTemperatureDescription"
+            app:layout_constraintTop_toBottomOf="@+id/textView_temperatureDescription"
+            app:layout_constraintTop_toTopOf="@+id/textView_comfortTemperatureDescription" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout_wind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/card_background_child"
+        android:elevation="4dp"
+        android:padding="4dp"
+        android:translationZ="2dp"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout_weatherCharacter"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout_weatherCharacter">
+
+        <TextView
+            android:id="@+id/textView_wind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wind"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_wind_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="26sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_wind" />
+
+        <TextView
+            android:id="@+id/textView_windDimension"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="@string/m_s"
+            android:textSize="11sp"
+            app:layout_constraintStart_toEndOf="@+id/textView_wind_speed"
+            app:layout_constraintTop_toTopOf="@+id/textView_wind_speed" />
+
+        <TextView
+            android:id="@+id/textView_windDirection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="11sp"
+            app:layout_constraintStart_toStartOf="@+id/textView_windDimension"
+            app:layout_constraintTop_toBottomOf="@+id/textView_windDimension" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout_pressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/card_background_child"
+        android:elevation="4dp"
+        android:padding="4dp"
+        android:translationZ="2dp"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout_wind"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout_wind">
+
+        <TextView
+            android:id="@+id/textView_pressure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pressure"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_pressure_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="26sp"
+            app:layout_constraintStart_toStartOf="@+id/textView_pressure"
+            app:layout_constraintTop_toBottomOf="@+id/textView_pressure" />
+
+        <TextView
+            android:id="@+id/textView_pressureDimension1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="@string/mm"
+            android:textSize="11sp"
+            app:layout_constraintStart_toEndOf="@+id/textView_pressure_count"
+            app:layout_constraintTop_toTopOf="@+id/textView_pressure_count" />
+
+        <TextView
+            android:id="@+id/textView_pressureDimension2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/rs_st"
+            android:textSize="11sp"
+            app:layout_constraintStart_toStartOf="@+id/textView_pressureDimension1"
+            app:layout_constraintTop_toBottomOf="@+id/textView_pressureDimension1" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout_wetness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/card_background_child"
+        android:elevation="4dp"
+        android:padding="4dp"
+        android:translationZ="2dp"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout_pressure"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout_pressure">
+
+        <TextView
+            android:id="@+id/textView_wetness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Wetness"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_wetness_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="26sp"
+            app:layout_constraintStart_toStartOf="@+id/textView_wetness"
+            app:layout_constraintTop_toBottomOf="@+id/textView_wetness" />
+
+        <TextView
+            android:id="@+id/textView_wetnessDimension"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="@string/percent"
+            android:textSize="11sp"
+            app:layout_constraintStart_toEndOf="@+id/textView_wetness_count"
+            app:layout_constraintTop_toTopOf="@+id/textView_wetness_count" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout_gm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/card_background_child"
+        android:elevation="4dp"
+        android:padding="4dp"
+        android:translationZ="2dp"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout_wind"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout_wind">
+
+        <TextView
+            android:id="@+id/textView_gm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Gm_activity"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_gm_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="26sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_gm" />
+
+        <TextView
+            android:id="@+id/textView_some1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="@string/points"
+            android:textSize="11sp"
+            app:layout_constraintStart_toEndOf="@+id/textView_gm_activity"
+            app:layout_constraintTop_toTopOf="@+id/textView_gm_activity" />
+
+        <TextView
+            android:id="@+id/textView_some2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/from_9"
+            android:textSize="11sp"
+            app:layout_constraintStart_toStartOf="@+id/textView_some1"
+            app:layout_constraintTop_toBottomOf="@+id/textView_some1" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout_watter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/card_background_child"
+        android:elevation="4dp"
+        android:padding="4dp"
+        android:translationZ="2dp"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout_gm"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout_gm">
+
+        <TextView
+            android:id="@+id/textView_water"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/water"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_water_temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="26sp"
+            app:layout_constraintStart_toStartOf="@+id/textView_water"
+            app:layout_constraintTop_toBottomOf="@+id/textView_water" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout_sunSummary"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:padding="4dp"
+        android:background="@drawable/card_background_child"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout_gm"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayout_gm">
+
+
+        <ImageView
+            android:id="@+id/imageView_sun"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/sun"
+            app:layout_constraintBottom_toBottomOf="@id/textView_sunFall"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_sunSummary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView_sun"
+            app:layout_constraintTop_toTopOf="@+id/imageView_sun" />
+
+        <TextView
+            android:id="@+id/textView_sunRise"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/textView_sunSummary"
+            app:layout_constraintStart_toStartOf="@+id/textView_sunSummary"
+            app:layout_constraintTop_toBottomOf="@+id/textView_sunSummary" />
+
+        <TextView
+            android:id="@+id/textView_sunFall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/textView_sunRise"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView_sunRise"
+            app:layout_constraintTop_toBottomOf="@+id/textView_sunRise" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout_moonSummery"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:padding="4dp"
+        android:background="@drawable/card_background_child"
+        app:layout_constraintEnd_toEndOf="@+id/constraintLayout_sunSummary"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout_sunSummary"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayout_sunSummary">
+
+        <ImageView
+            android:id="@+id/imageView_moon"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/ic_baseline_close_24"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView_moonFall"
+            />
+
+        <TextView
+            android:id="@+id/textView_moonSummary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView_moon"
+            app:layout_constraintTop_toTopOf="@+id/imageView_moon" />
+
+        <TextView
+            android:id="@+id/textView_moonRise"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/textView_moonSummary"
+            app:layout_constraintStart_toStartOf="@+id/textView_moonSummary"
+            app:layout_constraintTop_toBottomOf="@+id/textView_moonSummary" />
+
+        <TextView
+            android:id="@+id/textView_moonFall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/textView_moonRise"
+            app:layout_constraintStart_toStartOf="@+id/textView_moonRise"
+            app:layout_constraintTop_toBottomOf="@+id/textView_moonRise" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

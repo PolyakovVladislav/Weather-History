@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="weather_character">Характер погоды:</string>
+    <string name="action_storage_title">Хранилище</string>
+    <string name="temperature">Температура:</string>
+    <string name="feeling_temperature">По ощущениям</string>
+    <string name="wind">Ветер</string>
+    <string name="mm">мм</string>
+    <string name="m_s">м/с</string>
+    <string name="rs_st">рт.ст.</string>
+    <string name="pressure">Давление</string>
+    <string name="Wetness">Влажность</string>
+    <string name="Gm_activity">Г/м активность</string>
+    <string name="points">балла</string>
+    <string name="from_9">из 9</string>
+    <string name="water">Вода</string>
+    <string name="error">Ошибка</string>
+</resources>

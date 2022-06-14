@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name" translatable="false">Weather History</string>
+    <string name="weather_character">Weather character:</string>
+    <string name="action_storage_title">Store:</string>
+    <string name="temperature">Temperature:</string>
+    <string name="feeling_temperature">Feeling</string>
+    <string name="wind">Wind</string>
+    <string name="mm">mm</string>
+    <string name="m_s">m/s</string>
+    <string name="rs_st">рт.ст.</string>
+    <string name="pressure">Pressure</string>
+    <string name="Wetness">Wetness</string>
+    <string name="percent" translatable="false">%</string>
+    <string name="Gm_activity">G/m activity</string>
+    <string name="points">points</string>
+    <string name="from_9">of 9</string>
+    <string name="water">Water</string>
+    <string name="error">Error</string>
+
+</resources>

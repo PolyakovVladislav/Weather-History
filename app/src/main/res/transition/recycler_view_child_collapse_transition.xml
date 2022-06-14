@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android"
+    android:transitionOrdering="sequential">
+
+    <autoTransition
+        android:fadingMode="fade_in"
+        android:duration="25">
+        <targets>
+            <target android:targetId="@+id/constraintLayout_weatherCharacter"/>
+            <target android:targetId="@+id/textView_weatherCharacter"/>
+            <target android:targetId="@+id/constraintLayout_wind"/>
+            <target android:targetId="@+id/textView_wind"/>
+            <target android:targetId="@+id/textView_wind_speed"/>
+            <target android:targetId="@+id/textView_windDimension"/>
+            <target android:targetId="@+id/textView_windDirection"/>
+            <target android:targetId="@+id/constraintLayout_pressure"/>
+            <target android:targetId="@+id/textView_pressure"/>
+            <target android:targetId="@+id/textView_pressure_count"/>
+            <target android:targetId="@+id/textView_pressureDimension1"/>
+            <target android:targetId="@+id/textView_pressureDimension2"/>
+            <target android:targetId="@+id/constraintLayout_wetness"/>
+            <target android:targetId="@+id/textView_wetness"/>
+            <target android:targetId="@+id/textView_wetness_count"/>
+            <target android:targetId="@+id/textView_wetnessDimension"/>
+            <target android:targetId="@+id/constraintLayout_gm"/>
+            <target android:targetId="@+id/textView_gm"/>
+            <target android:targetId="@+id/textView_gm_activity"/>
+            <target android:targetId="@+id/textView_some1"/>
+            <target android:targetId="@+id/textView_some2"/>
+            <target android:targetId="@+id/constraintLayout_watter"/>
+            <target android:targetId="@+id/textView_water"/>
+            <target android:targetId="@+id/textView_water_temperature"/>
+            <target android:targetId="@+id/constraintLayout_sunSummary"/>
+            <target android:targetId="@+id/imageView_sun"/>
+            <target android:targetId="@+id/textView_sunSummary"/>
+            <target android:targetId="@+id/textView_sunRise"/>
+            <target android:targetId="@+id/textView_sunFall"/>
+            <target android:targetId="@+id/constraintLayout_moonSummery"/>
+            <target android:targetId="@+id/imageView_moon"/>
+            <target android:targetId="@+id/textView_moonSummary"/>
+            <target android:targetId="@+id/textView_moonRise"/>
+            <target android:targetId="@+id/textView_moonFall"/>
+        </targets>
+    </autoTransition>
+    <arcMotion android:duration="50">
+        <targets>
+            <target android:targetId="@+id/textView_temperature"/>
+            <target android:targetId="@+id/textView_comfortTemperature"/>
+            <target android:targetId="@+id/imageView_weatherCharacter"/>
+        </targets>
+    </arcMotion>
+    <changeBounds android:duration="75">
+        <targets>
+            <target android:targetId="@+id/recycler_view_rootscene"/>
+            <target android:targetId="@+id/recycler_child_container"/>
+        </targets>
+    </changeBounds>
+</transitionSet>
